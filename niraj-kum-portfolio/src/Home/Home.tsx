@@ -1,14 +1,15 @@
 import Typewriter from "typewriter-effect";
 import style from "../Home/Home.module.css";
+import profilepic from "../images/profile/Niraj_Kumar.jpeg"
 
 export const Home = () => {
   return (
     <div className={`${style.desccontainer}`}>
       <div
         id="hero"
-        className="w-full flex pl-48 py-5 pr-5 md:p-28 justify-content-start flex-col-reverse lg:flex-row mb-20 top-0 left-0"
+        className="flex justify-content-start flex-col-reverse lg:flex-row"
       >
-        <div className="lg:w-full top-0 left-0" data-aos="fade-right">
+        <div className="top-0 left-0" data-aos="fade-right">
           <h1 className="text-4xl md:text-5xl lg:text-6xl py-2 montserrat-100 text-white">
             Hi👋,
           </h1>
@@ -32,8 +33,8 @@ export const Home = () => {
                   strings: ["Full-Stack Developer", "Backend Developer"],
                   autoStart: true,
                   loop: true,
-                  deleteSpeed: 0.1,
-                  delay: 75,
+                  deleteSpeed: 0.3,
+                  delay: 60,
                   cursor: "_"
                 }}
               />
@@ -41,6 +42,9 @@ export const Home = () => {
           </div>
         </div>
       </div>
+      {/* <div> */}
+        <img src={profilepic} alt="Loading.." />
+      {/* </div> */}
     </div>
   );
 };
