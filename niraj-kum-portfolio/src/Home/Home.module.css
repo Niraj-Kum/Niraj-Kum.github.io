@@ -11,9 +11,76 @@
 
 .desccontainer {
   display: flex;
+  position: relative;
   align-items: center;
   height: 100vh;
   width: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
+  background-image: url('../images/background/background.svg');
   background-color: rgb(46, 45, 43);
+}
+
+.propic {
+  width: 24rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+.bigimage {
+  position: absolute;
+  opacity: 1;
+}
+
+.description {
+  width: 40.706rem;
+  height: auto;
+}
+
+.sociallinks {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  line-height: 1;
+}
+
+.twittericon,
+.linkedinicon,
+.githubicon {
+  color: #45505b;
+  transition: color 0.15s;
+}
+
+.githubicon:hover,
+.twittericon:hover {
+  color: black;
+}
+
+.linkedinicon:hover {
+  color: #0077b5;
+}
+
+.downloadresumebtn {
+  color: rgb(116, 128, 138);
+  border-color: rgb(116, 128, 138) !important;
+  text-decoration: none;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 15px;
+  gap: 10px;
+  justify-content: space-evenly;
+  display: inline-flex;
+  align-items: center;
+  position:relative;
+  transition: background-color 0.15s;
+}
+
+.downloadresumebtn:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow:3px 3px 10px rgba(0, 0, 0, 0.6);
 }

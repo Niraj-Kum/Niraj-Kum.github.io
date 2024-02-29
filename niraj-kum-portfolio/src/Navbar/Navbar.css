@@ -51,6 +51,7 @@
 
 .nav-menu a:hover {
   width: 100%;
+  transition: .3s;
 }
 
 .nav-menu a span {
@@ -65,6 +66,7 @@
 .nav-menu .active, .nav-menu a:hover {
   color: #fff;
   background: #0563bb;
+  transition: .3s;
 }
 
 .menu-item {
